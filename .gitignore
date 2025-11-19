@@ -1,0 +1,11 @@
+*.sketch
+*.fig
+
+*.xd
+
+.DS_Store
+.prettierignore
+
+/design
+README_template.md
+style-guide.md

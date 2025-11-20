@@ -1,52 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Contact form</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Contact Us
-
-  First Name
-  This field is required
-
-  Last Name
-  This field is required
-
-  Email Address
-  Please enter a valid email address
-  This field is required
-
-  Query Type
-  General Enquiry
-  Support Request
-  Please select a query type
-
-  Message
-  This field is required
-
-  I consent to being contacted by the team
-  To submit this form, please consent to being contacted
-
-  Submit
-
-  Message Sent!
-  Thanks for completing the form. We'll be in touch soon!
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <title>Frontend Mentor | Contact form</title>
+  </head>
+  <body>
+    <main id="container">
+      <form id="form">
+        <h3>Contact Us</h3>
+        <div class="name-container">
+          <div>
+            <label for="first-name"> First Name <span>*</span> </label><br />
+            <input type="text" id="first-name" name="first-name" /><br />
+            <span class="error fname">This field is required</span>
+          </div>
+          <div>
+            <label for="last-name"> Last Name <span>*</span> </label><br />
+            <input type="text" id="last-name" name="last-name" /><br />
+            <span class="error lname">This field is required</span>
+          </div>
+        </div>
+        <label for="email">Email <span>*</span></label
+        ><br />
+        <input type="email" name="email" id="email" /><br />
+        <span class="error mail">Please enter a valid email address</span>
+        <div>
+          <label for="">
+            Query Type <span>*</span>
+            <div>
+              <div>
+                <input type="radio" name="" />
+                <label for="">General Enquiry</label>
+              </div>
+              <div>
+                <input type="radio" name="" id="" />
+                <label for=""> Support Request </label>
+              </div>
+            </div>
+          </label>
+          <span class="error query">Please select a query type</span>
+        </div>
+        <label for="">
+          Message <span>*</span><br />
+          <textarea name="" id=""></textarea></label
+        ><br />
+        <span class="error msg">This field is required</span><br />
+        <input type="checkbox" name="" id="" />
+        <label for=""
+          >I consent to being contacted by the team <span>*</span></label
+        ><br />
+        <span class="error checkbox">To submit this form, please consent to being contacted</span
+        ><br />
+        <input type="submit" value="Submit" />
+      </form>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>

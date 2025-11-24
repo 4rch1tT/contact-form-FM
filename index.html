@@ -19,36 +19,36 @@
       <form id="form">
         <h3>Contact Us</h3>
         <div class="name-container">
-          <div>
+          <div class="name-container-p1">
             <label for="first-name"> First Name <span>*</span> </label><br />
             <input type="text" id="first-name" name="first-name" /><br />
-            <span class="error fname">This field is required</span>
+            <span class="error" id="error-fname">This field is required</span>
           </div>
-          <div>
+          <div class="name-container-p2">
             <label for="last-name"> Last Name <span>*</span> </label><br />
             <input type="text" id="last-name" name="last-name" /><br />
-            <span class="error lname">This field is required</span>
+            <span class="error" id="error-lname">This field is required</span>
           </div>
         </div>
-        <label for="email">Email <span>*</span></label
+        <label for="email">Email Address <span>*</span></label
         ><br />
         <input type="email" name="email" id="email" /><br />
-        <span class="error mail">Please enter a valid email address</span>
+        <span class="error" id="error-mail">Please enter a valid email address</span>
         <div>
           <label for="">
             Query Type <span>*</span>
-            <div>
-              <div>
+            <div class="radio-div">
+              <div class="radio-div-p1">
                 <input type="radio" name="" />
                 <label for="">General Enquiry</label>
               </div>
-              <div>
+              <div class="radio-div-p2">
                 <input type="radio" name="" id="" />
                 <label for=""> Support Request </label>
               </div>
             </div>
           </label>
-          <span class="error query">Please select a query type</span>
+          <span class="error" id="error-query">Please select a query type</span>
         </div>
         <label for="">
           Message <span>*</span><br />
@@ -59,9 +59,10 @@
         <label for=""
           >I consent to being contacted by the team <span>*</span></label
         ><br />
-        <span class="error checkbox">To submit this form, please consent to being contacted</span
+        <span class="error" id="error-checkbox"
+          >To submit this form, please consent to being contacted</span
         ><br />
-        <input type="submit" value="Submit" />
+        <button type="submit" id="submit-btn">Submit</button>
       </form>
     </main>
     <script src="script.js"></script>

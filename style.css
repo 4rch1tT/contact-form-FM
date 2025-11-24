@@ -20,12 +20,74 @@
 }
 
 #form {
-  border: 1px solid black;
+  width: calc(100% - 800px);
+  border-radius: 10px;
   padding: 24px;
   background-color: hsl(0, 0%, 100%);
 }
 
 .name-container {
+  width: 100%;
   display: flex;
-  gap: 5px;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.name-container-p1 {
+  flex: 1;
+}
+
+.name-container-p2 {
+  flex: 1;
+}
+
+h3 {
+  color: hsl(187, 24%, 22%);
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+label {
+  font-size: 16px;
+  color: hsl(187, 24%, 22%);
+}
+
+input {
+  width: 100%;
+  margin-top: 5px;
+  padding: 10px;
+  border: 0.5px solid hsl(186, 15%, 59%);
+  border-radius: 5px;
+}
+
+.radio-div {
+  display: flex;
+}
+
+.radio-div-p1 {
+  flex: 1;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.radio-div-p2 {
+  flex: 1;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+#submit-btn {
+  width: 100%;
+  padding: 8px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(169, 82%, 27%);
+  border: none;
+  border-radius: 5px;
+}
+
+.error {
+  color: hsl(0, 66%, 54%);
+  font-size: small;
 }

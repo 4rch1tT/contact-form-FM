@@ -21,35 +21,44 @@
         <div class="name-container">
           <div class="name-container-p1">
             <label for="first-name"> First Name <span>*</span> </label><br />
-            <input type="text" id="first-name" name="first-name" /><br />
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              class="input"
+            /><br />
             <span class="error" id="error-fname">This field is required</span>
           </div>
           <div class="name-container-p2">
             <label for="last-name"> Last Name <span>*</span> </label><br />
-            <input type="text" id="last-name" name="last-name" /><br />
+            <input
+              type="text"
+              id="last-name"
+              name="last-name"
+              class="input"
+            /><br />
             <span class="error" id="error-lname">This field is required</span>
           </div>
         </div>
         <label for="email">Email Address <span>*</span></label
         ><br />
-        <input type="email" name="email" id="email" /><br />
-        <span class="error" id="error-mail">Please enter a valid email address</span>
-        <div>
-          <label for="">
-            Query Type <span>*</span>
-            <div class="radio-div">
-              <div class="radio-div-p1">
-                <input type="radio" name="" />
-                <label for="">General Enquiry</label>
-              </div>
-              <div class="radio-div-p2">
-                <input type="radio" name="" id="" />
-                <label for=""> Support Request </label>
-              </div>
-            </div>
-          </label>
-          <span class="error" id="error-query">Please select a query type</span>
+        <input type="email" name="email" id="email" class="input" /><br />
+        <span class="error" id="error-mail"
+          >Please enter a valid email address</span
+        ><br />
+        <label>Query Type <span>*</span></label>
+        <div class="radio-div">
+          <div class="radio-div-p1">
+            <input type="radio" name="query-type" id="general-enq" />
+            <label for="general-req">General Enquiry</label>
+          </div>
+          <div class="radio-div-p2">
+            <input type="radio" name="query-type" id="support-req" />
+            <label for="support-req"> Support Request </label>
+          </div>
         </div>
+        <span class="error" id="error-query">Please select a query type</span
+        ><br />
         <label for="">
           Message <span>*</span><br />
           <textarea name="" id=""></textarea></label

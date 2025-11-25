@@ -52,7 +52,7 @@ label {
   color: hsl(187, 24%, 22%);
 }
 
-input {
+.input {
   width: 100%;
   margin-top: 5px;
   padding: 10px;
@@ -62,20 +62,29 @@ input {
 
 .radio-div {
   display: flex;
+  gap: 10px;
 }
 
 .radio-div-p1 {
+  padding: 10px;
   flex: 1;
   display: flex;
   justify-items: center;
   align-items: center;
+  gap: 5px;
+  border: 0.5px solid hsl(186, 15%, 59%);
+  border-radius: 5px;
 }
 
 .radio-div-p2 {
+  padding: 10px;
   flex: 1;
   display: flex;
   justify-items: center;
   align-items: center;
+  gap: 5px;
+  border: 0.5px solid hsl(186, 15%, 59%);
+  border-radius: 5px;
 }
 
 #submit-btn {

@@ -40,25 +40,29 @@
             <span class="error" id="error-lname">This field is required</span>
           </div>
         </div>
-        <label for="email">Email Address <span>*</span></label
-        ><br />
-        <input type="email" name="email" id="email" class="input" /><br />
-        <span class="error" id="error-mail"
-          >Please enter a valid email address</span
-        ><br />
-        <label>Query Type <span>*</span></label>
-        <div class="radio-div">
-          <div class="radio-div-p1">
-            <input type="radio" name="query-type" id="general-enq" />
-            <label for="general-req">General Enquiry</label>
-          </div>
-          <div class="radio-div-p2">
-            <input type="radio" name="query-type" id="support-req" />
-            <label for="support-req"> Support Request </label>
-          </div>
+        <div class="email-container">
+          <label for="email">Email Address <span>*</span></label
+          ><br />
+          <input type="email" name="email" id="email" class="input" /><br />
+          <span class="error" id="error-mail"
+            >Please enter a valid email address</span
+          ><br />
         </div>
-        <span class="error" id="error-query">Please select a query type</span
-        ><br />
+        <div class="query-container">
+          <label>Query Type <span>*</span></label>
+          <div class="radio-div">
+            <div class="radio-div-p1">
+              <input type="radio" name="query-type" id="general-enq" />
+              <label for="general-req">General Enquiry</label>
+            </div>
+            <div class="radio-div-p2">
+              <input type="radio" name="query-type" id="support-req" />
+              <label for="support-req"> Support Request </label>
+            </div>
+          </div>
+          <span class="error" id="error-query">Please select a query type</span
+          ><br />
+        </div>
         <label for="">
           Message <span>*</span><br />
           <textarea name="" id=""></textarea></label

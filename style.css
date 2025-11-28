@@ -49,6 +49,16 @@
   margin-bottom: 10px;
 }
 
+.checkbox-main-container {
+  margin: 10px 0px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
 h3 {
   color: hsl(187, 24%, 22%);
   font-size: 24px;
@@ -119,4 +129,5 @@ textarea {
 .error {
   color: hsl(0, 66%, 54%);
   font-size: small;
+  display: none;
 }

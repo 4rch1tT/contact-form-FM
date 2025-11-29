@@ -20,28 +20,32 @@
         <h3>Contact Us</h3>
         <div class="name-container">
           <div class="name-container-p1">
-            <label for="first-name"> First Name <span>*</span> </label><br />
+            <label for="first-name">
+              First Name <span class="asterik">*</span> </label
+            ><br />
             <input
               type="text"
               id="first-name"
               name="first-name"
               class="input"
             /><br />
-            <span class="error" id="error-fname">This field is required</span>
+            <span class="error" id="error-fname"></span>
           </div>
           <div class="name-container-p2">
-            <label for="last-name"> Last Name <span>*</span> </label><br />
+            <label for="last-name">
+              Last Name <span class="asterik">*</span> </label
+            ><br />
             <input
               type="text"
               id="last-name"
               name="last-name"
               class="input"
             /><br />
-            <span class="error" id="error-lname">This field is required</span>
+            <span class="error" id="error-lname"></span>
           </div>
         </div>
         <div class="email-container">
-          <label for="email">Email Address <span>*</span></label
+          <label for="email">Email Address <span class="asterik">*</span></label
           ><br />
           <input type="email" name="email" id="email" class="input" /><br />
           <span class="error" id="error-mail"
@@ -49,7 +53,7 @@
           ><br />
         </div>
         <div class="query-container">
-          <label>Query Type <span>*</span></label>
+          <label>Query Type <span class="asterik">*</span></label>
           <div class="radio-div">
             <div class="radio-div-p1">
               <input type="radio" name="query-type" id="general-enq" />
@@ -63,16 +67,17 @@
           <span class="error" id="error-query">Please select a query type</span
           ><br />
         </div>
-        <label for="">
-          Message <span>*</span><br />
-          <textarea name="" id=""></textarea></label
+        <label>
+          Message <span class="asterik">*</span><br />
+          <textarea name="message" id="message"></textarea></label
         ><br />
-        <span class="error msg">This field is required</span><br />
+        <span class="error" id="error-msg">This field is required</span><br />
         <div class="checkbox-main-container">
           <div class="checkbox-container">
-            <input type="checkbox" name="" id="" />
+            <input type="checkbox" name="checkbox" id="checkbox" />
             <label for=""
-              >I consent to being contacted by the team <span>*</span></label
+              >I consent to being contacted by the team
+              <span class="asterik">*</span></label
             ><br />
           </div>
           <span class="error" id="error-checkbox"

@@ -55,11 +55,15 @@
           <div class="radio-div">
             <div class="radio-div-p1">
               <input type="radio" name="query-type" id="general-enq" />
-              <label for="general-enq">General Enquiry</label>
+              <label for="general-enq" class="radio-label"
+                >General Enquiry</label
+              >
             </div>
             <div class="radio-div-p2">
               <input type="radio" name="query-type" id="support-req" />
-              <label for="support-req"> Support Request </label>
+              <label for="support-req" class="radio-label">
+                Support Request
+              </label>
             </div>
           </div>
           <span class="error" id="error-query"></span><br />
@@ -71,11 +75,16 @@
         <span class="error" id="error-msg"></span><br />
         <div class="checkbox-main-container">
           <div class="checkbox-container">
-            <input type="checkbox" name="checkbox" id="checkbox" />
-            <label for=""
-              >I consent to being contacted by the team
-              <span class="asterik">*</span></label
-            ><br />
+            <div>
+              <label class="custom-checkbox">
+                <input type="checkbox" name="checkbox" id="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div>
+              I consent to being contacted by the team
+              <span class="asterik">*</span>
+            </div>
           </div>
           <span class="error" id="error-checkbox"></span><br />
         </div>

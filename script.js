@@ -5,11 +5,14 @@ const emailInput = document.getElementById("email");
 const radioButtons = document.querySelectorAll(
   'input[type="radio"][name="query-type"]'
 );
-const generalQueryInput = document.getElementById("general-req");
+const generalQueryInput = document.getElementById("general-enq");
 const supportQueryInput = document.getElementById("support-req");
+const radioDivP1 = document.getElementById("radio-div-p1");
+const radioDivP2 = document.getElementById("radio-div-p2");
 const messageInput = document.getElementById("message");
 const checkboxInput = document.getElementById("checkbox");
 const submitButton = document.getElementById("submit-btn");
+const successState = document.getElementById("success-state");
 
 const firstNameError = document.getElementById("error-fname");
 const lastNameError = document.getElementById("error-lname");
@@ -91,10 +94,33 @@ function onSubmit(e) {
     messageInput.value = "";
     checkboxInput.checked = false;
 
-    radioButtons.forEach(rb=>rb.checked = false)
+    radioButtons.forEach((rb) => (rb.checked = false));
+
+    radioDivP1.style.backgroundColor = "";
+    radioDivP2.style.backgroundColor = "";
+
+    successState.style.display = "block";
+
+    setTimeout(() => {
+      successState.style.display = "none";
+    }, 5000);
 
     console.log("form submitted");
   }
 }
+
+radioButtons.forEach((rb) => {
+  rb.addEventListener("change", () => {
+    radioDivP1.style.backgroundColor = "";
+    radioDivP2.style.backgroundColor = "";
+
+    if (generalQueryInput.checked) {
+      radioDivP1.style.backgroundColor = "hsl(148, 38%, 91%)";
+    }
+    if (supportQueryInput.checked) {
+      radioDivP2.style.backgroundColor = "hsl(148, 38%, 91%)";
+    }
+  });
+});
 
 form.addEventListener("submit", onSubmit);

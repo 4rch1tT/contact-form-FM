@@ -61,6 +61,7 @@
   display: flex;
   align-items: center;
   gap: 6px;
+  color: hsl(187, 24%, 22%);
 }
 
 .custom-checkbox input {
@@ -135,7 +136,7 @@ textarea:hover {
   margin-top: 8px;
 }
 
-.radio-div-p1 {
+#radio-div-p1 {
   padding: 10px 18px;
   flex: 1;
   display: flex;
@@ -146,7 +147,7 @@ textarea:hover {
   border-radius: 8px;
 }
 
-.radio-div-p2 {
+#radio-div-p2 {
   padding: 10px 18px;
   flex: 1;
   display: flex;
@@ -155,11 +156,29 @@ textarea:hover {
   gap: 5px;
   border: 0.5px solid hsl(186, 15%, 59%);
   border-radius: 8px;
+}
+
+.radio-label input {
+  display: none;
+}
+
+.radio-label .radio-checkmark {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  border: 1px solid hsl(186, 15%, 59%);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.radio-label input:checked + .radio-checkmark {
+  background: url("./assets/images/icon-radio-selected.svg") no-repeat
+    center/cover;
 }
 
 #submit-btn {
   width: 100%;
-  padding: 10px;
+  padding: 15px;
   margin-top: 10px;
   color: hsl(0, 0%, 100%);
   background-color: hsl(169, 82%, 27%);
@@ -167,7 +186,28 @@ textarea:hover {
   border-radius: 5px;
 }
 
+#submit-btn:hover {
+  cursor: pointer;
+}
+
 .error {
   color: hsl(0, 66%, 54%);
   font-size: small;
+}
+
+#success-state {
+  display: none;
+  position: absolute;
+  top: 20px;
+  padding: 24px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(187, 24%, 22%);
+  border-radius: 10px;
+}
+
+.success-div-p1 {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  margin-bottom: 10px;
 }

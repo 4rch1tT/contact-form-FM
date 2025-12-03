@@ -53,15 +53,17 @@
         <div class="query-container">
           <label>Query Type <span class="asterik">*</span></label>
           <div class="radio-div">
-            <div class="radio-div-p1">
-              <input type="radio" name="query-type" id="general-enq" />
-              <label for="general-enq" class="radio-label"
-                >General Enquiry</label
-              >
+            <div id="radio-div-p1">
+              <label class="radio-label">
+                <input type="radio" name="query-type" id="general-enq" />
+                <span class="radio-checkmark"></span>
+                General Enquiry
+              </label>
             </div>
-            <div class="radio-div-p2">
-              <input type="radio" name="query-type" id="support-req" />
-              <label for="support-req" class="radio-label">
+            <div id="radio-div-p2">
+              <label class="radio-label">
+                <input type="radio" name="query-type" id="support-req" />
+                <span class="radio-checkmark"></span>
                 Support Request
               </label>
             </div>
@@ -90,6 +92,13 @@
         </div>
         <button type="submit" id="submit-btn">Submit</button>
       </form>
+      <div id="success-state">
+        <div class="success-div-p1">
+          <img src="./assets/images/icon-success-check.svg" alt="icon-success-check">
+          <p>Message Sent!</p>
+        </div>
+        <p>Thanks for completing the form. We'll be in touch soon!</p>
+      </div>
     </main>
     <script src="script.js"></script>
   </body>
